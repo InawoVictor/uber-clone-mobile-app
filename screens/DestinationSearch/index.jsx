@@ -1,3 +1,4 @@
+// import { GOOGLE_API_KEY } from '@env';
 import { View, Text, TextInput } from 'react-native'
 import React, { useEffect, useState } from 'react'
 
@@ -30,7 +31,7 @@ const DestinationSearch = () => {
                         // console.log(data, details);
                     }}
                     query={{
-                        key: 'AIzaSyDGaiubUdqf5Bypla2u6eSlVDmvopME5ew',
+                        key: process.env.GOOGLE_API_KEY,
                         language: 'en',
                     }}
                 />
@@ -45,7 +46,7 @@ const DestinationSearch = () => {
                         // console.log(data, details);
                     }}
                     query={{
-                        key: 'AIzaSyDGaiubUdqf5Bypla2u6eSlVDmvopME5ew',
+                        key: process.env.GOOGLE_API_KEY,
                         language: 'en',
                     }}
                 />
